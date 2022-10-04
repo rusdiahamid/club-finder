@@ -1,8 +1,6 @@
-import clubs from './clubs.js';
-
 class DataSource {
   static searchClub(keyword) {
-    fetch(`https://sports-api.dicoding.dev/teams/search?t=${keyword}`)
+    return fetch(`https://sports-api.dicoding.dev/teams/search?t=${keyword}`)
       .then((response) => {
         return response.json();
       })
